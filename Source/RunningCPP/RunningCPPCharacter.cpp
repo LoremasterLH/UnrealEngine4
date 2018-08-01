@@ -63,7 +63,7 @@ void ARunningCPPCharacter::SetupPlayerInputComponent(class UInputComponent* Play
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 }
 
-
+/*
 void ARunningCPPCharacter::OnResetVR()
 {
 	UHeadMountedDisplayFunctionLibrary::ResetOrientationAndPosition();
@@ -90,7 +90,7 @@ void ARunningCPPCharacter::LookUpAtRate(float Rate)
 	// calculate delta for this frame from the rate information
 	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
 }
-
+*/
 void ARunningCPPCharacter::MoveForward(float Value)
 {
 	if ((Controller != NULL) && (Value != 0.0f))
